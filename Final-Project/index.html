@@ -107,7 +107,7 @@ line-height: normal;
     padding: 15px;
     width: 98%;
     height: 150px;
-    align-items: center;
+    align-items: left;
     position:relative;
      margin:0px;
      clear:left;
@@ -118,10 +118,10 @@ line-height: normal;
 
 #rcorners4 {
     font-family: 'abel';
-    font-size: 20px;
+    font-size: 30px;
 font-style: normal;
 font-variant: normal;
-font-weight: 800;
+font-weight: 100px;
 line-height: 26.4px;
 
 color: white;
@@ -143,7 +143,7 @@ color: white;
 </head>
 <body>
   <div class="center">
-<h1 id="rcorners1" >Myth or Fact: How much do you know about immigration?</h1>
+<h1 id="rcorners1" >How much do you know about immigration?</h1>
 </div>
 <div class="center">
 <h2 id="rcorners3" >Immigration is a hot topic in today's political climate with a lot of misinformation permeating throughout the country. Whether you live up in Maine or in the borderlands of the southwest, understanding our country's past, present, and future with regards to immigration is the first step towards becoming a more informed voter!</h2>
@@ -152,6 +152,7 @@ color: white;
 <div class="center">
 <h3 id="rcorners2" >MYTH OR FACT</h3>
 </div>
+<p id="demo" class="results"></p>
 <style>
 p{
   text-align: center;
@@ -164,106 +165,82 @@ h3 {text-align: center
 }
 h4 {text-align: center
 }
-h5{text-align: center
+h5 {text-align: center
 }
-h6{text-align: center
+h6 {text-align: center
 }
 </style>
-<p id=rcorners4 class="question"> IT IS A FEDERAL OFFENSE TO ENTER THE US WITHOUT DOCUMENTS FOR THE FIRST TIME.</p>
+<p id=rcorners4 class="question"> Residing in the United States without documentation is a crime.</p>
 
 <h1>
 <label>
-  <input type="radio" name="q1" value="1" id="q1a">
+  <input type="radio" name="q1" value="0" id="q1a">
   <IMG src="http://www.changefactory.com.au/wp-content/uploads/2010/09/article-fact-or-opinion.jpg" width=304 height=228>
 </label>
 <label>
-  <input type="radio" name="q1" value="2" id="q1b">
+  <input type="radio" name="q1" value="1" id="q1b">
   <IMG src="http://scion-social.com/blog/wp-content/uploads/2016/08/bigstock-Myth-stamp-63032431-700x467.jpg" width=304 height=228>
 </label>
 </h1>
 
-<p id=rcorners4 class="question">JOBS FILLED BY IMMIGRANTS ARE JOBS THAT COULD BE FILLED BY UNEMPLOYED AMERICANS.</p>
+<div id="answer1"></div>
+
+<p id=rcorners4 class="question">Immigrants drive down the wages of American workers.</p>
 
 <h2>
 <label>
-  <input type="radio" name="q2" value="3" id="q1a">
+  <input type="radio" name="q2" value="0" id="q1a">
   <IMG src="http://www.changefactory.com.au/wp-content/uploads/2010/09/article-fact-or-opinion.jpg" width=304 height=228>
 </label>
 <label>
-  <input type="radio" name="q2" value="4" id="q1b">
+  <input type="radio" name="q2" value="1" id="q1b">
   <IMG src="http://scion-social.com/blog/wp-content/uploads/2016/08/bigstock-Myth-stamp-63032431-700x467.jpg" width=304 height=228>
 </label>
-
 </h2>
 
-<p id=rcorners4 class="question">WHEN IMMIGRANTS WITHOUT DOCUMENTATION ARE CAUGHT, THEY ARE IMMEDIATLY DEPORTED.</p>
+<div id="answer2"></div>
+
+<p id=rcorners4 class="question">WHEN IMMIGRANTS WITHOUT DOCUMENTATION ARE CAUGHT, THEY ARE IMMEDIATELY DEPORTED.</p>
 
 <h3>
 <label>
-  <input type="radio" name="q3" value="2" id="q1a">
+  <input type="radio" name="q3" value="0" id="q1a">
   <IMG src="http://www.changefactory.com.au/wp-content/uploads/2010/09/article-fact-or-opinion.jpg" width=304 height=228>
 </label>
 <label>
-  <input type="radio" name="q3" value="3" id="q1b">
+  <input type="radio" name="q3" value="1" id="q1b">
   <IMG src="http://scion-social.com/blog/wp-content/uploads/2016/08/bigstock-Myth-stamp-63032431-700x467.jpg" width=304 height=228>
 </label>
 </h3>
 
-<p id=rcorners4 class="question">DESPITE WHAT OUR PRESIDENT SAYS, THERE IS A WALL ALREADY BUILT ON THE US-MEXICO BORDER.</p>
-</h4>
+<p id=rcorners4 class="question">DESPITE WHAT OUR CURRENT PRESIDENT SAYS, THERE IS A WALL ALREADY BUILT ON THE US-MEXICO BORDER.</p>
+<h4>
 <label>
-  <input type="radio" name="q4" value="2" id="q1a">
+  <input type="radio" name="q4" value="1" id="q1a">
   <IMG src="http://www.changefactory.com.au/wp-content/uploads/2010/09/article-fact-or-opinion.jpg" width=304 height=228>
 </label>
 <label>
-  <input type="radio" name="q4" value="3" id="q1b">
+  <input type="radio" name="q4" value="0" id="q1b">
   <IMG src="http://scion-social.com/blog/wp-content/uploads/2016/08/bigstock-Myth-stamp-63032431-700x467.jpg" width=304 height=228>
 </label>
 </h4>
 
 <p id=rcorners4 class="question">IMMIGRANTS HAVE ECONOMICALLY REVITALIZED MANY COMMUNITIES THROUGHOUT THE COUNTRY.</p>
-</h4>
+<h5>
 <label>
-  <input type="radio" name="q5" value="2" id="q1a">
+  <input type="radio" name="q5" value="1" id="q1a">
   <IMG src="http://www.changefactory.com.au/wp-content/uploads/2010/09/article-fact-or-opinion.jpg" width=304 height=228>
 </label>
 <label>
-  <input type="radio" name="q5" value="3" id="q1b">
+  <input type="radio" name="q5" value="0" id="q1b">
   <IMG src="http://scion-social.com/blog/wp-content/uploads/2016/08/bigstock-Myth-stamp-63032431-700x467.jpg" width=304 height=228>
 </label>
-</h4>
+</h5>
 
 <h6>
   <button class="button" onclick="save()" id="button">Submit</button>
 </h6>
 
-<p id="demo"></p>
-
-<script>
-function save() {
-  var myvar1checked = document.querySelector('input[name = "q1"]:checked').value;
-  var myvar2checked = document.querySelector('input[name = "q2"]:checked').value;
-  var myvar3checked = document.querySelector('input[name = "q3"]:checked').value;
-  var myvar4checked = document.querySelector('input[name = "q4"]:checked').value;
-  var myvar5checked = document.querySelector('input[name = "q5"]:checked').value;
-  var a = parseInt(myvar1checked)
-  var b = parseInt(myvar2checked)
-  var c = parseInt(myvar3checked)
-  var d = parseInt(myvar4checked)
-  var e = parseInt(myvar5checked)
-
-  if ( a + b + c + d + e < 5) {
-    greeting = "You are vanilla ice cream!"
-  } else if (a + b + c + d + e < 8) {
-    greeting = "You are gelato!"
-  } else if (a + b + c  d + e < 11) {
-    greeting = "You are frozen yogurt!" }
-    else {
-      greeting = "You are a milkshake!"
-  }
-    document.getElementById("demo").innerHTML = greeting;
-}
-</script>
 
 
 
