@@ -112,8 +112,9 @@ pre {
 
 .center1{
   margin:0 auto;
-    width: 500px;
-  background-color: black;
+    width: 411px;
+    height:auto;
+
 }
 
 .center2{
@@ -175,7 +176,7 @@ background: #71da71;
    height:auto;
    z-index: 0;
    text-align:center;
-   margin-top:30px;   
+   margin-top:30px;
 }
 ul{
   text-align: left
